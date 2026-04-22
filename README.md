@@ -2,7 +2,7 @@
 
 ## 👥 Équipe
 * **Wesley HOUEGBE-maker** (@WesleyHOUEGBE-maker) - Chef de projet
-* **Patrice AGBODEMAKOUPAT** - Développeur
+* **Patrice AGBODEMAKOU** - Développeur
 
 ## 📋 Présentation
 Application de gestion de médiathèque développée en Python (POO) dans le cadre de la formation à l'IUT de Parakou sous la direction du **Dr. MOUSSE**.
