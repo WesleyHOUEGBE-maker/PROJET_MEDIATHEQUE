@@ -1,41 +1,58 @@
 # 📚 Projet Médiathèque - IUT Parakou
 
 ## 👥 Équipe
-* **Wesley HOUEGBE-maker** (Chef de projet)
-* **Patrice** (Développeur)
+* **Wesley HOUEGBE-maker** (@WesleyHOUEGBE-maker) - Chef de projet
+* **Patrice AGBODEMAKOUPAT** - Développeur
 
 ## 📋 Présentation
-Application de gestion de médiathèque développée en Python (POO) dans le cadre de la formation à l'IUT de Parakou.
+Application de gestion de médiathèque développée en Python (POO) dans le cadre de la formation à l'IUT de Parakou sous la direction du **Dr. MOUSSE**.
+
+## 🎯 Objectif du Projet
+Développer un système d'inventaire multi-support (Livres, Vinyles, Jeux de société) permettant de gérer efficacement le catalogue, les adhérents et le suivi des emprunts en respectant les principes de la Programmation Orientée Objet.
 
 ## 🛠️ Spécifications Techniques
 * **Langage** : Python 3.10+
 * **Gestionnaire de version** : Git / GitHub
-* **Environnement** : Virtualenv (`venv`)
-* **Architecture** : Programmation Orientée Objet (POO)
+* **Norme de codage** : PEP 8
+* **Architecture** : Programmation Orientée Objet (POO) avec modularité (séparation des fichiers)
 
-## 🏗️ Architecture Logicielle (Modèles)
+---
 
-### 📁 Classes de Données
-Le projet suit une hiérarchie d'héritage stricte pour la gestion des médias :
+## 🏗️ Architecture Logicielle (Focus POO)
 
-* **Classe Mère : `Media`**
-    * Attributs : `id`, `titre`, `createur`, `annee_sortie`, `est_disponible`
-* **Classe Fille : `Livre`**
-    * Attributs spécifiques : `isbn`, `nb_pages`
-* **Classe Fille : `Vinyle`**
-    * Attributs spécifiques : `label`, `nb_pistes`
-* **Classe Fille : `JeuSociete`**
-    * Attributs spécifiques : `editeur`, `age_minimum`
+### 📁 Classes de Données (`models.py`)
+Le projet suit une hiérarchie d'héritage pour une gestion optimale des médias :
+* **Classe Mère : `Media`** (Base commune : id, titre, créateur, année)
+* **Classes Filles : `Livre`, `Vinyle`, `JeuSociete`** (Attributs spécifiques et polymorphisme de la méthode `affiche()`)
+* **Classe `Adherent`** : Gestion des membres et suivi de leur liste d'emprunts.
 
-### ⚙️ Gestion et Logique
-* **Classe `Adherent`** : Gère les informations des membres et leur liste d'emprunts.
-* **Classe `Mediatheque`** : Cœur de l'application gérant le catalogue et la logique métier.
-* **Classe `DatabaseManager`** : (Prévue pour le Bloc 5) Assure la persistance des données via SQLite.
+### ⚙️ Gestion et Logique (`gestion.py`)
+* **Classe `Mediatheque`** : Cœur de l'application gérant le catalogue (ajout/suppression), la recherche et la logique métier des emprunts.
 
-## 🚀 État d'avancement
-- [x] Bloc 1 : Configuration de l'environnement (Venv, Git)
-- [x] Bloc 2 : Cahier des charges et Workflow GitHub
-- [ ] Bloc 3 : Architecture POO (En cours)
-- [ ] Bloc 4 : Menu Interactif
-- [ ] Bloc 5 : Persistance SQLite
-      
+---
+
+## 🚀 État d'avancement (Découpage par Blocs)
+
+### ✅ Bloc 1 : Cahier de charges et spécifications techniques
+*Environnement virtuel, Git, types de données de base.*
+- [x] **Terminé**
+
+### ✅ Bloc 2 : Workflow & Fondations
+*Environnement virtuel, Git, types de données complexes.*
+- [x] **Terminé**
+
+### ✅ Bloc 3 : Architecture (POO)
+*Classes, héritage, encapsulation, modularité.*
+- [x] **Terminé** (Classes créées et fichiers séparés)
+
+### ⏳ Bloc 4 : Persistance
+*Gestion SQLite ou fichiers JSON/CSV.*
+- [ ] **À venir**
+
+### ⏳ Bloc 5 : Qualité
+*Gestion des exceptions, Tests unitaires avec Pytest.*
+- [ ] **À venir**
+
+### ⏳ Bloc 6 : Interface & Livraison
+*Interface Console avancée (puis GUI Tkinter/PyQt ou Web).*
+- [ ] **À venir**
