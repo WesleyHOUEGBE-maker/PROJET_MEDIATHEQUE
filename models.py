@@ -56,7 +56,7 @@ class JeuSociete(Media):
 
     def affiche(self):
         base = super().affiche()
-        return f"{base} | Editeur: {self.editeur}, Age min: {age_min} ans"
+        return f"{base} | Editeur: {self.editeur}, Age min: {self.age_min} ans"
 
 class Adherent:
     def __init__(self, id_carte, nom):
