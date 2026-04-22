@@ -70,10 +70,30 @@ def menu_principal():
         elif choix == "4": app.rechercher_media("") # Recherche vide = tout afficher
         elif choix == "5": sous_menu_adherent(app)
         elif choix == "6": 
-            app.effectuer_emprunt(int(input("ID Média: ")), int(input("ID Adhérent: ")))
+            # 1. On affiche l'état complet du catalogue par catégorie
+            print("\n" + "="*15 + " ÉTAT DES DISPONIBILITÉS " + "="*15)
+            
+            print("\n📚 [LIVRES]")
+            app.afficher_par_type(Livre)
+            
+            print("\n💿 [VINYLES]")
+            app.afficher_par_type(Vinyle)
+            
+            print("\n🎲 [JEUX DE SOCIÉTÉ]")
+            app.afficher_par_type(JeuSociete)
+            
+            print("\n" + "="*45)
+            
+            # 2. On demande les IDs pour l'emprunt
+            id_m = int(input("\nEntrez l'ID du média : "))
+            id_a = int(input("Entrez l'ID de l'adhérent : "))
+            
+            # 3. La logique dans gestion.py s'occupe de vérifier si c'est dispo ou non
+            app.effectuer_emprunt(id_m, id_a)
+
         elif choix == "Q": 
             print("👋 Au revoir !")
             break
 
-if __name__ == "_main_":
+if __name__ == "__main__" :
     menu_principal()
