@@ -57,3 +57,13 @@ class JeuSociete(Media):
     def affiche(self):
         base = super().affiche()
         return f"{base} | Editeur: {self.editeur}, Age min: {age_min} ans"
+
+class Adherent:
+    def __init__(self, id_carte, nom):
+        self.id_carte = id_carte
+        self.nom = nom
+        # On crée une liste vide pour stocker les médias que cet adhérent va emprunter
+        self.liste_emprunts = []
+
+    def affiche_infos(self):
+        return f"Carte N°{self.id_carte} | Nom : {self.nom} ({len(self.liste_emprunts)} emprunts en cours)"        
