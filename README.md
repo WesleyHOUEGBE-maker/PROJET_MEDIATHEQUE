@@ -58,4 +58,29 @@ Le projet suit une hiérarchie d'héritage pour une gestion optimale des médias
 ### ✅ Bloc 6 : Interface & Livraison
 *Interface Console avancée (puis GUI Tkinter/PyQt ou Web).*
 - [x] **Terminé**
+
+
+### **Livraison**
+
+## 🛠️ Installation et Utilisation
+
+### 1. Prérequis
+* Python 3.10 ou version supérieure.
+* Application Acode ou Termux (pour l'usage mobile).
+
+### 2. Installation
+```bash
+git clone [https://github.com/WesleyHOUEGBE-maker/PROJET_MEDIATHEQUE.git](https://github.com/WesleyHOUEGBE-maker/PROJET_MEDIATHEQUE.git)
+cd PROJET_MEDIATHEQUE
+phyton gui.py
+
+
+
+
+
+
+
+
+
+
       
