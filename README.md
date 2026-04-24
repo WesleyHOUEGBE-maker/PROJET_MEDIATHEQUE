@@ -48,14 +48,14 @@ Le projet suit une hiérarchie d'héritage pour une gestion optimale des médias
 ### ✅ Bloc 4 : Persistance
 *Gestion SQLite ou fichiers JSON/CSV.*
 - [x] **Terminé**
-- [ ] 
+
 
 ### ✅ Bloc 5 : Qualité
 *Gestion des exceptions, Tests unitaires avec Pytest.*
 - [x] **Terminé**
-- [ ] 
+
 
 ### ✅ Bloc 6 : Interface & Livraison
 *Interface Console avancée (puis GUI Tkinter/PyQt ou Web).*
 - [x] **Terminé**
-- [ ]  
+      
